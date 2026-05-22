@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacienda Gómez</title>
+
+    <style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f3f3f3, #e7efe5);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor{
+    background-color: white;
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    margin-top: 40px;
+
+    animation: aparecer 1s ease;
+}
+
+.logo{
+    width: 150px;
+    border-radius: 50%;
+
+    transition: 0.4s;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+.logo:hover{
+    transform: scale(1.08);
+}
+
+h1{
+    color: #222;
+    margin-top: 20px;
+    font-size: 42px;
+}
+
+p{
+    color: #666;
+    font-size: 18px;
+}
+
+a{
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background-color: #5ca36b;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+a:hover{
+    background-color: #4b8b59;
+    transform: translateY(-3px);
+}
+
+@keyframes flotar{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-8px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+@keyframes aparecer{
+
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <img class="logo" src="acienda gomez.png" alt="Logo Hacienda Gómez">
+
+        <h1>Bienvenido a Hacienda Gómez</h1>
+
+        
+
+        <a href="index2.html">Inicio</a>
+
+    </div>
+
+</body>
+</html>

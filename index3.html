@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="index2.html">Atrás</a>
+    <img src="acienda gomez.png" alt="Hacienda Gomez" class="logo">
+    <title>Nosotros | Hacienda Gomez</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #eef2ec;
+        }
+
+        .contenedor{
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+
+            animation: aparecer 1s ease;
+        }
+
+        h1{
+            text-align: center;
+            color: #2c5e1a;
+            font-size: 40px;
+        }
+
+        h2, h3{
+            color: #3d7a2b;
+            margin-top: 35px;
+            border-bottom: 2px solid #dfe8dc;
+            padding-bottom: 8px;
+        }
+
+        p{
+            line-height: 1.8;
+            color: #444;
+            text-align: justify;
+        }
+
+        ul{
+            list-style-type: square;
+            line-height: 1.8;
+        }
+
+        
+
+        .tarjetas{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .card{
+            flex: 1;
+            min-width: 250px;
+            background: #f7faf6;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #5ca36b;
+
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-5px);
+        }
+
+        
+
+        .imagen-propietario{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .imagen-propietario img{
+            width: 280px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+
+            transition: 0.3s;
+        }
+
+        .imagen-propietario img:hover{
+            transform: scale(1.03);
+        }
+
+        .imagen-propietario h3{
+            border: none;
+        }
+
+
+        @keyframes aparecer{
+
+            from{
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+
+        }
+        @keyframes zoom{
+
+            from{
+                transform: scale(0.8);
+            }
+
+            to{
+                transform: scale(1);
+            }
+
+        }
+
+         a{
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 28px;
+            background-color: #5ca36b;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+
+            transition: 0.3s;
+        }
+        .logo{
+            width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: auto;                       
+
+            transition: 0.4s;
+            animation: flotar 3s ease-in-out infinite;
+
+
+            
+
+        
+        }
+        .logo:hover{
+            transform: scale(1.08);
+        }
+        
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Nosotros</h1>
+
+        <p>
+            Somos un equipo apasionado por la agricultura sostenible y el bienestar animal.
+            En Hacienda Gómez, nos dedicamos a cultivar la tierra con respeto y a criar animales de manera responsable,
+            ofreciendo productos de calidad a nuestra comunidad.
+        </p>
+
+        <p>
+            Nuestra hacienda trabaja diariamente para mantener prácticas agrícolas responsables,
+            cuidando el medio ambiente y promoviendo el desarrollo de la producción agrícola y ganadera.
+        </p>
+
+        <p>
+            En Hacienda Gómez creemos en el valor del trabajo familiar, la naturaleza y el compromiso
+            con un futuro más sostenible y saludable.
+        </p>
+
+        <h2>Valores</h2>
+
+        <ul>
+            <li>Sostenibilidad</li>
+            <li>Compromiso</li>
+            <li>Calidad</li>
+            <li>Respeto por la naturaleza</li>
+        </ul>
+
+        <div class="tarjetas">
+
+            <div class="card">
+
+                <h3>Visión</h3>
+
+                <p>
+                    Convertirnos en un referente en agricultura sostenible y crianza responsable,
+                    siendo reconocidos por nuestra calidad y compromiso con el medio ambiente.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Misión</h3>
+
+                <p>
+                    Promover prácticas agrícolas responsables y ofrecer productos de calidad
+                    que contribuyan al bienestar de nuestros clientes y al cuidado del planeta.
+                </p>
+
+            </div>
+
+        </div>
+
+        <h2>Propietario</h2>
+
+        <p>
+            El propietario de Hacienda Gómez es Dionicio Gómez,
+            quien ha dedicado gran parte de su vida al trabajo agrícola y ganadero,
+            manteniendo la tradición familiar y el compromiso con la comunidad.
+        </p>
+
+        <div class="imagen-propietario">
+
+            <h3>Imagen del propietario</h3>
+
+            <img src="dioniciogomez.jpeg" alt="Dionicio Gómez">
+
+        </div>
+
+    </div>
+    
+
+</body>
+
+</html>
