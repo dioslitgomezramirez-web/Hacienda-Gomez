@@ -86,6 +86,8 @@
 
         .imagen-propietario img{
             width: 280px;
+            max-width: 100%;
+            height: auto;
             border-radius: 15px;
             box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
 
@@ -155,6 +157,17 @@
             transform: scale(1.08);
         }
         
+        @media (max-width: 600px) {
+            .contenedor {
+                padding: 20px;
+            }
+            .tarjetas {
+                flex-direction: column;
+            }
+            h1 {
+                font-size: 30px;
+            }
+        }
 
     </style>
 
@@ -222,7 +235,7 @@
         <p>
             El propietario de Hacienda Gómez es Dionicio Gómez,
             quien ha dedicado gran parte de su vida al trabajo agrícola y ganadero,
-            manteniendo la tradición familiar y el compromiso con la comunidad.
+            manteniendo la tradición familiar and el compromiso con la comunidad.
         </p>
 
         <div class="imagen-propietario">

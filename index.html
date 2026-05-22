@@ -24,8 +24,9 @@ body{
     border-radius: 20px;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
     margin-top: 40px;
+    
 
-    animation: aparecer 1s ease;
+    animation: desaparecer 1s ease;
 }
 
 .logo{
@@ -84,7 +85,7 @@ a:hover{
 
 }
 
-@keyframes aparecer{
+@keyframes desaparecer{
 
     from{
         opacity: 0;
@@ -96,6 +97,16 @@ a:hover{
         transform: translateY(0px);
     }
 
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        padding: 20px;
+        width: 90%;
+    }
+    h1 {
+        font-size: 32px;
+    }
 }
 
 </style>
